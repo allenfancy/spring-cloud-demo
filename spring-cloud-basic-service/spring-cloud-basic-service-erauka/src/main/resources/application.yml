@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: server1
+
+server:
+  port: 7001
+  display-name: eureka-server-01
+  address: 127.0.0.1

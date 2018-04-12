@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/allenfancy/config-server
+          search-paths: config-repo
+          username: 598717394@qq.com
+          password: fcy@9233
+server:
+  port: 4001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://eureka-server-01:7001/eureka/

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: hystrix-turbine
+
+server:
+  display-name: hystrix-turbine
+  address: 127.0.0.1
+  port: 3000
+management:
+  port: 3001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://eureka-server-01:7001/eureka/ #, http://eureka-server-02:7002/eureka/, http://eureka-server-03:7003/eureka/
+turbine:
+  app-config: LOGIN-SERVICE,REGISTER-SERVICE,USER-SERVICE #需要收集监控信息的服务名
+  cluster-name-expression: default # 指定集群名称
+  combine-host-port: true # 可以让同一个主机上的集群通过主机名和端口号的组合来进行区分

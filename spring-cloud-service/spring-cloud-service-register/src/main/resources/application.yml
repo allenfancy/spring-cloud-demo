@@ -1,0 +1,12 @@
+# 端口信息
+server:
+  port: 9000
+# 应用名称
+spring:
+  application:
+    name: REGISTER-SERVICE
+  profiles:
+    active: dev
+
+
+

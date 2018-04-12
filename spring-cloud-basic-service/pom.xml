@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>spring-cloud-demo</groupId>
+    <artifactId>spring-cloud-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>spring-cloud-basic-service</artifactId>
+  <packaging>pom</packaging>
+  <distributionManagement>
+    <site>
+      <id>website</id>
+      <url>scp://webhost.company.com/www/website</url>
+    </site>
+  </distributionManagement>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <modules>
+  	<module>spring-cloud-basic-eureka-server</module>
+  	<module>spring-cloud-service-hystrix-dashboard</module>
+    <module>spring-cloud-basic-service-erauka</module>
+    <module>spring-cloud-basic-service-hystrix-dashboard</module>
+    <module>spring-cloud-basic-service-turbine</module>
+    <module>spring-cloud-basic-service-sleuth</module>
+    <module>spring-cloud-basic-service-config</module>
+    <module>spring-cloud-basic-service-demo</module>
+  </modules>
+</project>
