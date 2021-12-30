@@ -20,7 +20,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<brave.version>4.9.0</brave.version>
 		<zipkin-reporter2.version>2.1.4</zipkin-reporter2.version>
-		<log4j.version>2.8.2</log4j.version>
+		<log4j.version>2.17.1</log4j.version>
 	</properties>
 	<modules>
 		<module>spring-cloud-basic-service</module>
